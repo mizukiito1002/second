@@ -22,24 +22,49 @@
 
 
 
-
 <br /><br /><br /><br />
 
 
 <input type="Number"  name="A" value="0" size="20">
-<input type="button" onclick="op1.value = Number(A.value);" value="収入">
-</form>
-<br />
+<input type="button" value="収入" onclick="op1.value = Number(A.value);">
+<br/>
 <input type="Number"  name="B" value="0" size="20">
 <input type="button" onclick="op2.value = Number(B.value);" value="支出">
 </form>
 <br />
 =<output name="op3">0</output>
-<input type="button" onclick="op3.value = Number(A.value) - Number(B.value);" value="確定">
+<input type="button" onclick="op3.value = Number(A.value)-Number(B.value);" value="確定">
+</form>
+
+<br/>
+<br/>
+収入
+
+<input type="Number"  name="A" value="0" size="20">
+<input type="button" value="収入" onclick="op4.value = +Number(A.value);">
+<input type="Number"  name="B" value="0" size="20">
+<input type="button" value="収入" onclick="op5.value = Number(A.value);">
+<output name="op4">0</output>
+
+<br/>
+<br/>
+
+<form>
+<input type="number" id="na4"> 
+<input type="button" value="収入"　onclick="document.getElementById('op1').value=
+parseInt(document.getElementById('na4').value, 10)
+<br/>
+
+<input type="number" id="nb4">
+<input type="button" value="支出"　onclick="document.getElementById('op2').value=
+parseInt(document.getElementById('nb4').value, 10)
+<br/>
+<output for="na4 nb4" id="op3">計算結果</output>
+<input type="button" onclick="document.getElementById('op4').value =
+parseInt(document.getElementById('na4').value, 10)-
+parseInt(document.getElementById('nb4').value, 10)" value="計算する">
 </form>
 
 
-
-    
 </body>
 </html>
